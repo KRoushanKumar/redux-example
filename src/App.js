@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./features/counter/Counter";
+import Todo from "./features/Todo/Todo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Welcome to the Redux Toolkit Example</h1>
+      <p>This is a simple application demonstrating the use of Redux Toolkit for state management.</p>
+      <p>Feel free to explore the Counter and Todo features!</p>
+      <Counter />
+      <Todo />
+
     </div>
   );
 }
